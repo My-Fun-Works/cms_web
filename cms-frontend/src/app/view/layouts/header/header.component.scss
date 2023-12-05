@@ -7,7 +7,6 @@
 #head-section {
   display: flex;
   padding: 0 30px;
-  justify-content: space-between;
   align-items: center;
 }
 #logo {
@@ -42,15 +41,15 @@
 }
 
 #home-tags > li > a {
-  color: gray;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  padding: 10px;
-  height: fit-content;
+  color: lightgray;
+  //box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  //padding: 10px;
+  //height: fit-content;
   width: 135px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 400;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.836);
+  //background-color: rgba(0, 0, 0, 0.836);
   transition-property: all;
   transition-duration: 350ms;
   position: relative;
@@ -79,40 +78,41 @@
 }
 
 #home-tags > li > a:hover {
-  background-color:rgb(247, 227, 149);
-  box-shadow:  1px 1px 3px rgb(74, 65, 29);
-  color: black;
+  //background-color:rgb(247, 227, 149);
+  //box-shadow:  1px 1px 3px rgb(74, 65, 29);
+  color: white;
+  font-weight: bold;
   cursor: pointer;
 
 }
 .tags:hover .menu-container{
   display: inline-block;
 }
-#home-tags > li > a.drop-down:hover::after{
-  content: "";
-  position: absolute;
-  /* top: 50%; */
-  transform: translateY(-70%);
-  margin-left: 2px;
-  border-top:5px solid  transparent;
-  border-right:5px solid transparent ;
-  border-bottom:5px solid black ;
-  border-left:5px solid transparent ;
-}
-.drop-down::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-20%);
-  margin-left: 2px;
-  border-top:5px solid rgb(213, 213, 213) ;
-  border-right:5px solid transparent ;
-  border-bottom:5px solid transparent ;
-  border-left:5px solid transparent ;
-}
-.drop-down{
-  position:relative;
-}
+//#home-tags > li > a.drop-down:hover::after{
+//  content: "";
+//  position: absolute;
+//  /* top: 50%; */
+//  transform: translateY(-70%);
+//  margin-left: 2px;
+//  border-top:5px solid  transparent;
+//  border-right:5px solid transparent ;
+//  border-bottom:5px solid black ;
+//  border-left:5px solid transparent ;
+//}
+//.drop-down::after {
+//  content: "";
+//  position: absolute;
+//  top: 50%;
+//  transform: translateY(-20%);
+//  margin-left: 2px;
+//  border-top:5px solid rgb(213, 213, 213) ;
+//  border-right:5px solid transparent ;
+//  border-bottom:5px solid transparent ;
+//  border-left:5px solid transparent ;
+//}
+//.drop-down{
+//  position:relative;
+//}
 .menu-container {
 
   background-color: transparent;
@@ -168,17 +168,17 @@
 
 
 }
-.menu > ul > li:hover{
-  background-color: rgba(247, 227, 149, 0.901);
-  color: #6D6E70;
-  cursor: pointer;
+//.menu > ul > li:hover{
+//  background-color: rgba(247, 227, 149, 0.901);
+//  color: #6D6E70;
+//  cursor: pointer;
 
-}
-.menu > ul > li:hover::before{
-  border-bottom-color: rgba(247, 227, 149, 0.901);
-  color: #6D6E70;
-
-}
+//}
+//.menu > ul > li:hover::before{
+//  border-bottom-color: rgba(247, 227, 149, 0.901);
+//  color: #6D6E70;
+//
+//}
 
 #contact-section {
   position: fixed;
@@ -213,7 +213,7 @@
 }
 #contact-section > div > a:hover{
   transform:scale(1.1);
-  background-color: #dbd2b5ee;
+  //background-color: #dbd2b5ee;
 
 }
 #whatsapp{

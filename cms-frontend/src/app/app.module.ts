@@ -8,12 +8,17 @@ import { PreviewComponent } from './view/components/preview/preview.component';
 import {FormsModule} from "@angular/forms";
 import {HeaderComponent} from "./view/layouts/header/header.component";
 import {RouterModule, Routes} from "@angular/router";
+import {NgOptimizedImage} from "@angular/common";
 
 export const routs: Routes=[
   {
     path:"",
     component:HomeComponent
   },
+  {
+    path:"preview",
+    component:PreviewComponent
+  }
 
 ]
 
@@ -29,6 +34,7 @@ export const routs: Routes=[
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(routs),
+    NgOptimizedImage,
   ],
   providers: [],
   bootstrap: [AppComponent]
