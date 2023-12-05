@@ -1,0 +1,14 @@
+<div *ngIf="regNumber" class="mt-4">
+  <h2>Plate Preview</h2>
+  <div class="uk-number-plate">
+    <span class="plate-text">{{ regNumber.slice(0, 2) }}</span>
+    <span class="plate-separator">{{ regNumber.slice(2, 4) }}</span>
+    <span class="plate-text">{{ regNumber.slice(4) }}</span>
+  </div>
+</div>
+<div *ngIf="formattedPlate" class="mt-4">
+  <h2>Plate Preview</h2>
+  <div class="uk-number-plate">
+    {{ formattedPlate }}
+  </div>
+</div>

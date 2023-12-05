@@ -1,0 +1,20 @@
+.uk-number-plate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #428bca; /* Blue color as an example */
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.plate-text {
+  margin: 0 5px;
+}
+
+.plate-separator {
+  margin: 0 2px;
+}
+

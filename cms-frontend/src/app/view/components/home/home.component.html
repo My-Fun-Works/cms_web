@@ -1,1 +1,19 @@
-<p>home works!</p>
+<div class="container">
+  <h1>Number Plate Factory</h1>
+  <label for="plateInput">Enter Registration Number:</label>
+  <input type="text" id="plateInput" [(ngModel)]="registrationNumber" maxlength="7" placeholder="e.g., AB12CDE">
+  <label for="styleSelect">Select Plate Style:</label>
+  <select id="styleSelect" [(ngModel)]="selectedStyle">
+    <option value="input_click-1">Standard (520 x 111mm / 20.5 x 4.4")</option>
+    <option value="input_click-2">13" Acrylic (339 x 111mm / 13 x 4.4")</option>
+    <option value="input_click-3">16" Acrylic (399 x 111mm / 16 x 4.4")</option>
+    <!-- Include other styles as needed -->
+  </select>
+  <button (click)="previewPlate()">Preview</button>
+  <div id="previewContainer">
+    <h2>Preview:</h2>
+    <div id="previewPlate" class="preview-text" [style.background]="selectedPlateColor">
+      {{ previewText }}
+    </div>
+  </div>
+</div>
